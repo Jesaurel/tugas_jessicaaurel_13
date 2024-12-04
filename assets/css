@@ -1,0 +1,296 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fefbf6; /* Warna krem */
+    color: #333; /* Warna teks gelap */
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #4a148c; /* Warna ungu tua */
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #fdd835; /* Warna emas */
+}
+
+header .login-btn {
+    display: flex;
+    gap: 10px;
+}
+
+header .login-btn .cta-btn,
+header .login-btn .btn {
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fdd835; /* Warna emas */
+    color: #4a148c;
+    transition: background-color 0.3s ease;
+}
+
+header .login-btn .cta-btn:hover,
+header .login-btn .btn:hover {
+    background-color: #ffeb3b;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/food_background.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .hero-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fdd835;
+    color: #4a148c;
+    transition: background-color 0.3s ease;
+}
+
+.hero .hero-buttons .cta-primary:hover {
+    background-color: #ffeb3b;
+}
+
+.hero .hero-buttons .cta-secondary {
+    background-color: #fff;
+    color: #4a148c;
+}
+
+.hero .hero-buttons .cta-secondary:hover {
+    background-color: #fdd835;
+    color: #fff;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 2rem;
+    color: #4a148c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.about-content .text {
+    max-width: 50%;
+}
+
+.about-content .image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.why-choose-us .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.features .feature {
+    text-align: center;
+    flex: 1;
+    background-color: #fefbf6;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.features .feature img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* Catering Packages Section */
+.catering-packages {
+    padding: 50px 20px;
+    background-color: #fefbf6;
+}
+
+.catering-packages .packages {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.package {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package .image img {
+    width: 100%;
+    height: auto;
+}
+
+.package .text {
+    padding: 20px;
+    text-align: center;
+}
+
+.package .text h3 {
+    font-size: 1.5rem;
+    color: #4a148c;
+}
+
+.package .text p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.package .text .cta-btn {
+    background-color: #fdd835;
+    color: #4a148c;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.package .text .cta-btn:hover {
+    background-color: #ffeb3b;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-us p {
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4a148c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-contact {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.contact-info {
+    margin-top: 10px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info .contact-number,
+.contact-info .contact-email {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-info a:hover {
+    color: #ff7f50; /* Change color on hover */
+}
